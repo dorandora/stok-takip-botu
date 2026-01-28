@@ -2,8 +2,8 @@ name: Stok Takip Botu
 
 on:
   schedule:
-    -cron: '*/15 * * * *''  # Her 15 dakikada bir çalışır
-  workflow_dispatch:        # İstersen butona basıp elle de çalıştırabilirsin
+    - cron: '*/15 * * * *'  # Her 15 dakikada bir çalışır
+  workflow_dispatch:        # Elle çalıştırma butonu
 
 jobs:
   build:
@@ -19,8 +19,10 @@ jobs:
           python-version: '3.12'
 
       - name: Kütüphaneleri Yükle
-        run: |
-          pip install -r requirements.txt
+        run: pip install -r requirements.txt
+          
+      - name: Botu Çalıştır
+        run: python main.py
           
       - name: Botu Çalıştır
         run: python main.py
