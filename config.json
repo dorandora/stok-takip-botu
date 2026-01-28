@@ -4,7 +4,8 @@
             "store": "mango",
             "url": "https://shop.mango.com/tr/tr/p/kadin/yelekler/triko/mucevher-dugmeli-triko-yelek_17094447" 
         },
-                {
+            
+        {
             "store": "bershka",
             "url": "https://www.bershka.com/tr/zincirli-suni-deri-%C3%A7anta-c0p204043331.html?colorId=800"
         },
@@ -12,6 +13,11 @@
          {
             "store": "bershka",
             "url": "https://www.bershka.com/tr/cepli-suni-deri-ceket-c0p202798289.html?colorId=800"
+        },
+        
+         {
+            "store": "bershka",
+            "url": "https://www.bershka.com/tr/d%C3%BC%C5%9F%C3%BCk-bel-baggy-fit-barrel-fit-jean-c0p193748087.html?colorId=809"
         },
         
         {
@@ -23,4 +29,5 @@
     "sleep_min_seconds": 300,  
     "sleep_max_seconds": 500
 }
+
 
