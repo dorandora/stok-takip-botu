@@ -6,8 +6,14 @@
         },
                 {
             "store": "bershka",
-            "url": "hhttps://www.bershka.com/tr/d%C3%BC%C5%9F%C3%BCk-bel-baggy-fit-barrel-fit-jean-c0p193748087.html?colorId=401"
+            "url": "https://www.bershka.com/tr/zincirli-suni-deri-%C3%A7anta-c0p204043331.html?colorId=800"
         },
+        
+         {
+            "store": "bershka",
+            "url": "https://www.bershka.com/tr/cepli-suni-deri-ceket-c0p202798289.html?colorId=800"
+        },
+        
         {
             "store": "zara",
             "url": "https://www.zara.com/tr/tr/askili-sirt-dekolteli-body-p03644812.html?v1=467644325&utm_campaign=productShare&utm_medium=mobile_sharing_iOS&utm_source=red_social_movil#utm_referrer=https%3A%2F%2Fwww.zara.com%2Fshare%2Faskili-sirt-dekolteli-body-p03644812.html%3Fv1%3D467644325%26utm_campaign%3DproductShare%26utm_medium%3Dmobile_sharing_iOS%26utm_source%3Dred_social_movil"
@@ -17,3 +23,4 @@
     "sleep_min_seconds": 300,  
     "sleep_max_seconds": 500
 }
+
