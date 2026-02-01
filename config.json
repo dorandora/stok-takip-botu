@@ -9,6 +9,10 @@
             "store": "bershka",
             "url": "https://www.bershka.com/tr/zincirli-suni-deri-%C3%A7anta-c0p204043331.html?colorId=800"
         },
+        { 
+            "store": "bershka", 
+            "url": "https://www.bershka.com/tr/c0p193749504.html?colorId=426"
+        }, 
         
          {
             "store": "bershka",
@@ -29,6 +33,7 @@
     "sleep_min_seconds": 300,  
     "sleep_max_seconds": 500
 }
+
 
 
 
