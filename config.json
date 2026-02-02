@@ -1,9 +1,17 @@
 {
     "urls": [
         {
-            "store": "mango",
-            "url": "https://shop.mango.com/tr/tr/p/kadin/yelekler/triko/mucevher-dugmeli-triko-yelek_17094447" 
+            "store": "pullandbear",
+            "url": "https://www.pullandbear.com/tr/tr/c0p692155470.html#colorId=002" 
         },
+        {
+            "store": "pullandbear",
+            "url": "https://www.pullandbear.com/tr/tr/c0p692155822.html#colorId=002" 
+        }, 
+        {
+            "store": "pullandbear",
+            "url": "https://www.pullandbear.com/tr/tr/c0p692161040.html#colorId=716" 
+        }, 
             
         {
             "store": "bershka",
@@ -37,6 +45,7 @@
     "sleep_min_seconds": 300,  
     "sleep_max_seconds": 500
 }
+
 
 
 
