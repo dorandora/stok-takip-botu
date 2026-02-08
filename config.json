@@ -1,6 +1,14 @@
 {
     "urls": [
         {
+            "store": "pullandbear",
+            "url": "https://www.pullandbear.com/tr/suni-deri-ceket-l07700513?categoryId=0#colorId=716"
+        },
+        {
+            "store": "mango",
+            "url": "https://shop.mango.com/tr/tr/p/kad%C4%B1n/trenckotlar-ve-parkalar/parkalar/kadife-yaka-pamuklu-parka_17065789?c=37"
+        },
+        {
             "store": "bershka",
             "url": "https://www.bershka.com/tr/baggy-fit-balon-kesim-jean-c0p193749504.html?colorId=426" 
         },
@@ -42,6 +50,7 @@
     "sleep_min_seconds": 300,  
     "sleep_max_seconds": 500
 }
+
 
 
 
