@@ -310,3 +310,49 @@ def check_stock_mango(driver, sizes_to_check):
     except Exception as e:
         print(f"An error occurred while checking Mango stock: {e}")
         return None
+# Bu kodu scraperHelpers.py dosyasının EN ALTINA yapıştır
+def check_stock_pullandbear(driver, sizes_to_check):
+    try:
+        wait = WebDriverWait(driver, 15)
+
+        # Çerez uyarısını kapat (Varsa)
+        try:
+            accept_cookies = wait.until(EC.element_to_be_clickable((By.ID, "onetrust-accept-btn-handler")))
+            accept_cookies.click()
+        except:
+            pass
+
+        # Beden listesinin yüklenmesini bekle
+        print("Pull&Bear bedenleri aranıyor...")
+        wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, "[data-qa-anchor='productDetailSize']")))
+        time.sleep(2) # Dinamik yükleme için kısa bekleme
+
+        # Beden butonlarını bul
+        size_buttons = driver.find_elements(By.CSS_SELECTOR, "button[data-qa-anchor='sizeListItem']")
+        
+        # Eğer buton bulamazsa alternatif (bazı ürünlerde liste yapısı farklı olabilir)
+        if not size_buttons:
+             size_buttons = driver.find_elements(By.CLASS_NAME, "product-size-info__main-label")
+
+        for button in size_buttons:
+            try:
+                text = button.text.strip()
+                # Beden ismini temizle (örn: "M" veya "40")
+                if text in sizes_to_check:
+                    # Stok durumunu kontrol et
+                    class_attr = button.get_attribute("class")
+                    # "is-disabled" veya "out-of-stock" kontrolü
+                    if "disabled" in class_attr or "out-of-stock" in class_attr:
+                        print(f"Pull&Bear: {text} stokta yok.")
+                    else:
+                        print(f"Pull&Bear: {text} STOKTA!")
+                        return text
+            except:
+                continue
+                
+    except Exception as e:
+        print(f"Pull&Bear hatası: {e}")
+
+    return None
+
+
