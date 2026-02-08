@@ -1,4 +1,4 @@
-selenium==4.11.2
-webdriver-manager
+selenium>=4.16.0
+webdriver-manager>=4.0.0
 python-dotenv
 requests
