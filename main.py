@@ -5,7 +5,7 @@ from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.options import Options
 from webdriver_manager.chrome import ChromeDriverManager
-from scraperHelpers import check_stock_zara, check_stock_bershka, check_stock_mango
+from scraperHelpers import check_stock_zara, check_stock_bershka, check_stock_mango, check_stock_pullandbear
 
 # CONFIG YÜKLEME
 with open("config.json", "r") as config_file:
