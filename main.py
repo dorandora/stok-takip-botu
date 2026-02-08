@@ -2,6 +2,7 @@ import json
 import time
 import requests
 from selenium import webdriver
+import os
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.options import Options
 from webdriver_manager.chrome import ChromeDriverManager
@@ -14,9 +15,9 @@ with open("config.json", "r") as config_file:
 urls_to_check = config["urls"]
 sizes_to_check = config["sizes_to_check"]
 
-# TELEGRAM AYARLARI
-BOT_API = "8270767436:AAHZBtsYQQTtsahDYM70H4QFlzykqxBXAUI"
-CHAT_ID = "7743083402"
+# TELEGRAM BİLGİLERİNİ GİZLİDEN AL
+BOT_API = os.environ.get("TELEGRAM_API")
+CHAT_ID = os.environ.get("TELEGRAM_CHAT_ID")
 
 def send_telegram_message(message):
     if not BOT_API or not CHAT_ID:
