@@ -69,6 +69,9 @@ try:
                 size_in_stock = check_stock_bershka(driver, sizes_to_check)
             elif store == "mango":
                 size_in_stock = check_stock_mango(driver, sizes_to_check)
+            # YENİ EKLENEN KISIM:
+            elif store == "pullandbear":
+                size_in_stock = check_stock_pullandbear(driver, sizes_to_check)
             
             if size_in_stock:
                 msg = f"🚨 STOK BULUNDU! 🚨\n\nMağaza: {store.upper()}\nBeden: {size_in_stock}\nLink: {url}"
