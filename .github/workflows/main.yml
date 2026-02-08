@@ -2,7 +2,7 @@ name: Stok Takip Botu
 
 on:
   schedule:
-    - cron: '*/15 * * * *'  # Her 15 dakikada bir çalışır
+    - cron: '*/20 * * * *'  # 15 dk bazen çakışma yaratabilir, 20 dk daha güvenli
   workflow_dispatch:        # Elle çalıştırma butonu
 
 jobs:
@@ -16,13 +16,13 @@ jobs:
       - name: Python Kurulumu
         uses: actions/setup-python@v4
         with:
-          python-version: '3.12'
+          python-version: '3.10' # 3.12 bazen kütüphane uyumsuzluğu yapabilir, 3.10 çok kararlıdır.
 
+      - name: Chrome Tarayıcıyı Hazırla
+        uses: browser-actions/setup-chrome@latest
+        
       - name: Kütüphaneleri Yükle
         run: pip install -r requirements.txt
-          
-      - name: Botu Çalıştır
-        run: python main.py
           
       - name: Botu Çalıştır
         run: python main.py
