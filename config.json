@@ -5,13 +5,29 @@
             "url": "https://www.pullandbear.com/tr/suni-deri-ceket-l07700513?categoryId=0#colorId=716"
         },
         {
+            "store": "pullandbear",
+            "url": "https://www.pullandbear.com/tr/cizgili-triko-sort-l07698306?categoryId=0#colorId=605"
+        },
+        {
+            "store": "pullandbear",
+            "url": "https://www.pullandbear.com/tr/ajurlu-sort-l07696338?categoryId=0#colorId=712"
+        },
+        {
             "store": "mango",
             "url": "https://shop.mango.com/tr/tr/p/kad%C4%B1n/trenckotlar-ve-parkalar/parkalar/kadife-yaka-pamuklu-parka_17065789?c=37"
         },
         {
             "store": "bershka",
             "url": "https://www.bershka.com/tr/baggy-fit-balon-kesim-jean-c0p193749504.html?colorId=426" 
+        }, 
+        {
+            "store": "bershka",
+            "url": "https://www.bershka.com/tr/c0p189273755.html?colorId=712" 
         },
+        {
+            "store": "bershka",
+            "url": "https://www.bershka.com/tr/volanl%C4%B1-bengal-kuma%C5%9F-mini-elbise-c0p204483949.html" 
+        }, 
         
             
         {
@@ -50,6 +66,7 @@
     "sleep_min_seconds": 300,  
     "sleep_max_seconds": 500
 }
+
 
 
 
