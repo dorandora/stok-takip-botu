@@ -354,5 +354,81 @@ def check_stock_pullandbear(driver, sizes_to_check):
         print(f"Pull&Bear hatası: {e}")
 
     return None
+# STRADIVARIUS STOK KONTROL FONKSİYONU
+def check_stock_stradivarius(driver, sizes_to_check):
+    try:
+        wait = WebDriverWait(driver, 15)
 
+        # Çerez uyarısını kapat (Varsa - Inditex ortak ID'si)
+        try:
+            print("Stradivarius: Çerez uyarısı aranıyor...")
+            accept_cookies = wait.until(EC.element_to_be_clickable((By.ID, "onetrust-accept-btn-handler")))
+            accept_cookies.click()
+            print("Stradivarius: Çerez uyarısı kapatıldı.")
+        except Exception:
+            print("Stradivarius: Çerez uyarısı bulunamadı veya zaten kapalı.")
+
+        # Sayfanın ve beden listesinin yüklenmesini bekle
+        print("Stradivarius: Beden listesi yüklenmesi bekleniyor...")
+        # Stradivarius genellikle bedenleri bir liste içinde tutar. Beden konteynerini bekliyoruz.
+        wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, ".size-list, .product-size-info, [data-qa-anchor='productDetailSize']")))
+        time.sleep(3) # Dinamik içerik ve JavaScript'in tamamen yerleşmesi için ekstra bekleme
+
+        # Beden butonlarını/öğelerini bul (Inditex grubunda yaygın olan tag'ler)
+        # Stradivarius özel class'ları veya ortak QA tag'leri
+        size_elements = driver.find_elements(By.CSS_SELECTOR, "li[data-qa-anchor='sizeListItem'], button[data-qa-anchor='sizeListItem'], .size-item")
+        
+        sizes_found = {size: False for size in sizes_to_check}
+        any_in_stock = None
+
+        if not size_elements:
+             print("Stradivarius: Sayfada beden seçeneği bulunamadı. Belki de ürün tek bedendir veya sayfa yüklenememiştir.")
+             return None
+
+        for element in size_elements:
+            try:
+                # Bedenin yazılı olduğu asıl text kısmını al
+                # Bazen içindeki bir <span> etiketinde olur, bazen direkt butonun kendisinde.
+                try:
+                    size_label = element.find_element(By.CSS_SELECTOR, "span.text__label, .size-name, span").text.strip()
+                except NoSuchElementException:
+                    size_label = element.text.strip()
+                
+                # Eğer çektiğimiz text boşsa, üst elementin text'ine bak
+                if not size_label:
+                    size_label = element.get_attribute("innerText").strip()
+
+                if size_label in sizes_to_check:
+                    sizes_found[size_label] = True
+
+                    # Stok durumunu kontrol et
+                    class_attr = element.get_attribute("class") or ""
+                    aria_disabled = element.get_attribute("aria-disabled") == "true"
+                    is_disabled_attr = element.get_attribute("disabled") is not None
+                    
+                    # Stradivarius'ta tükenen ürünler genellikle şu class'ları veya özellikleri alır
+                    is_disabled = "is-disabled" in class_attr or "out-of-stock" in class_attr or "sold-out" in class_attr or aria_disabled or is_disabled_attr
+
+                    if is_disabled:
+                        print(f"Stradivarius: {size_label} bedeni stokta YOK.")
+                        any_in_stock = False if any_in_stock is None else any_in_stock
+                    else:
+                        print(f"Stradivarius: {size_label} bedeni STOKTA!")
+                        return size_label # Stok bulundu, bedeni döndür
+            except Exception as e:
+                print(f"Stradivarius: Beden öğesi işlenirken hata oluştu: {e}")
+                continue
+
+        if not any(sizes_found.values()):
+            print(f"Stradivarius: Aradığın bedenler ({', '.join(sizes_to_check)}) sayfada bulunamadı.")
+            return None
+
+        # Eğer aranan bedenler sayfada var ama hiçbiri stokta yoksa
+        if any_in_stock is False:
+            return False
+
+    except Exception as e:
+        print(f"Stradivarius: Stok kontrolü sırasında genel bir hata oluştu: {e}")
+
+    return None
 
