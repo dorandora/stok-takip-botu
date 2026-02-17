@@ -6,7 +6,7 @@ import os
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.options import Options
 from webdriver_manager.chrome import ChromeDriverManager
-from scraperHelpers import check_stock_zara, check_stock_bershka, check_stock_mango, check_stock_pullandbear
+from scraperHelpers import check_stock_zara, check_stock_bershka, check_stock_mango, check_stock_pullandbear, check_stock_stradivarius
 
 # CONFIG YÜKLEME
 with open("config.json", "r") as config_file:
@@ -73,6 +73,8 @@ try:
             # YENİ EKLENEN KISIM:
             elif store == "pullandbear":
                 size_in_stock = check_stock_pullandbear(driver, sizes_to_check)
+            elif store == "stradivarius":
+                size_in_stock = check_stock_stradivarius(driver, sizes_to_check)    
             
             if size_in_stock:
                 msg = f"🚨 STOK BULUNDU! 🚨\n\nMağaza: {store.upper()}\nBeden: {size_in_stock}\nLink: {url}"
