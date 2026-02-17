@@ -30,7 +30,7 @@
         },
         {
             "store": "mango",
-            "url": "https://shop.mango.com/tr/tr/p/k%B1n/trenckotlar-ve-parkalar/parkalar/kadife-yaka-pamuklu-parka_17065789?c=37"
+            "url": ""
         },
         {
             "store": "bershka",
@@ -42,7 +42,7 @@
         },
         {
             "store": "bershka",
-            "url": "https://www.bershka.com/tr/volanl%C4%B1-bengal-kuma%C5%9F-mini-elbise-c0p204483949.html" 
+            "url": "" 
         }, 
             
         {
@@ -81,6 +81,7 @@
     "sleep_min_seconds": 300,  
     "sleep_max_seconds": 500
 }
+
 
 
 
