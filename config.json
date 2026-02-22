@@ -29,6 +29,10 @@
             "url": "https://www.pullandbear.com/tr/ajurlu-sort-l07696338?categoryId=0#colorId=712"
         },
         {
+            "store": "pullandbear",
+            "url": "https://www.pullandbear.com/tr/fermuarl%C4%B1-dik-yaka-basic-sweatshirt-l07560502?cS=807&pelement=692988876"
+        },
+        {
             "store": "mango",
             "url": ""
         },
@@ -81,6 +85,7 @@
     "sleep_min_seconds": 300,  
     "sleep_max_seconds": 500
 }
+
 
 
 
