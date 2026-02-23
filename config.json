@@ -38,7 +38,11 @@
         },
         {
             "store": "bershka",
-            "url": "" 
+            "url": "https://www.bershka.com/tr/c0p189273755.html?colorId=712" 
+        }, 
+        {
+            "store": "bershka",
+            "url": "https://www.bershka.com/tr/d%C3%BC%C5%9F%C3%BCk-bel-baggy-fit-barrel-fit-jean-c0p193748087.html?colorId=809" 
         }, 
         {
             "store": "bershka",
@@ -85,6 +89,7 @@
     "sleep_min_seconds": 300,  
     "sleep_max_seconds": 500
 }
+
 
 
 
