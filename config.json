@@ -17,6 +17,14 @@
             "url": "https://www.stradivarius.com/tr/bagc%C4%B1kl%C4%B1-keten-gorunumlu-sort-l07436450?colorId=010&categoryId=0"
         },
         {
+            "store": "stradivarius",
+            "url": ""
+        },
+        {
+            "store": "stradivarius",
+            "url": ""
+        },
+        {
             "store": "pullandbear",
             "url": "https://www.pullandbear.com/tr/suni-deri-ceket-l07700513?categoryId=0#colorId=716"
         },
@@ -48,6 +56,22 @@
             "store": "bershka",
             "url": "https://www.bershka.com/tr/c0p196930264.html?colorId=760" 
         },
+        {
+            "store": "bershka",
+            "url": "https://www.bershka.com/tr/c0p196930264.html?colorId=422" 
+        }, 
+        {
+            "store": "bershka",
+            "url": "https://www.bershka.com/tr/c0p196932262.html?colorId=505" 
+        }, 
+        {
+            "store": "bershka",
+            "url": "https://www.bershka.com/tr/c0p196932262.html?colorId=251" 
+        }, 
+        {
+            "store": "bershka",
+            "url": "https://www.bershka.com/tr/c1010850196p199104995.html?colorId=514" 
+        }, 
         {
             "store": "bershka",
             "url": "https://www.bershka.com/tr/c0p196930264.html?colorId=441" 
@@ -89,6 +113,7 @@
     "sleep_min_seconds": 300,  
     "sleep_max_seconds": 500
 }
+
 
 
 
