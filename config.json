@@ -46,31 +46,31 @@
         },
         {
             "store": "bershka",
-            "url": " " 
+            "url": "https://www.bershka.com/tr/c0p204043331.html?colorId=800" 
         }, 
         {
             "store": "bershka",
-            "url": "https://www.bershka.com/tr/d%C3%BC%C5%9F%C3%BCk-bel-baggy-fit-barrel-fit-jean-c0p193748087.html?colorId=809" 
+            "url": "https://www.bershka.com/tr/c0p196930264.html?colorId=760" 
+        }, 
+        {
+            "store": "bershka",
+            "url": "https://www.bershka.com/tr/c0p204043331.html?colorId=800" 
+        },
+        {
+            "store": "bershka",
+            "url": "https://www.bershka.com/tr/c0p193748087.html?colorId=809" 
         }, 
         {
             "store": "bershka",
             "url": "" 
-        },
-        {
-            "store": "bershka",
-            "url": "https://www.bershka.com/tr/c1010747956p189276803.html?colorId=433" 
         }, 
         {
             "store": "bershka",
-            "url": "https://www.bershka.com/tr/c1010747956p191567200.html?colorId=800" 
+            "url": "" 
         }, 
         {
             "store": "bershka",
-            "url": "https://www.bershka.com/tr/c0p196932262.html?colorId=251" 
-        }, 
-        {
-            "store": "bershka",
-            "url": "https://www.bershka.com/tr/c1010850196p199104995.html?colorId=514" 
+            "url": "" 
         }, 
         {
             "store": "bershka",
@@ -79,7 +79,7 @@
             
         {
             "store": "bershka",
-            "url": "https://www.bershka.com/tr/zincirli-suni-deri-%C3%A7anta-c0p204043331.html?colorId=800"
+            "url": "" 
         },
         { 
             "store": "bershka", 
@@ -88,12 +88,12 @@
         
          {
             "store": "bershka",
-            "url": "https://www.bershka.com/tr/cepli-suni-deri-ceket-c0p202798289.html?colorId=800"
+            "url": ""
         },
         
          {
             "store": "bershka",
-            "url": "https://www.bershka.com/tr/d%C3%BC%C5%9F%C3%BCk-bel-baggy-fit-barrel-fit-jean-c0p193748087.html?colorId=809"
+            "url": ""
         },
         
         {
@@ -113,6 +113,7 @@
     "sleep_min_seconds": 300,  
     "sleep_max_seconds": 500
 }
+
 
 
 
