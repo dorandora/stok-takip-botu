@@ -2,11 +2,11 @@
     "urls": [
         {
             "store": "stradivarius",
-            "url": "https://www.stradivarius.com/tr/keten-gorunumlu-dokumlu-pantolon-l01235737?colorId=525&categoryId=0"
+            "url": ""
         },
         {
             "store": "stradivarius",
-            "url": "https://www.stradivarius.com/tr/bagc%C4%B1kl%C4%B1-keten-gorunumlu-sort-l07436450?colorId=003&categoryId=0"
+            "url": ""
         },
         {
             "store": "stradivarius",
@@ -26,19 +26,19 @@
         },
         {
             "store": "pullandbear",
-            "url": "https://www.pullandbear.com/tr/suni-deri-ceket-l07700513?categoryId=0#colorId=716"
+            "url": ""
         },
         {
             "store": "pullandbear",
-            "url": "https://www.pullandbear.com/tr/cizgili-triko-sort-l07698306?categoryId=0#colorId=605"
+            "url": ""
         },
         {
             "store": "pullandbear",
-            "url": "https://www.pullandbear.com/tr/ajurlu-sort-l07696338?categoryId=0#colorId=712"
+            "url": ""
         },
         {
             "store": "pullandbear",
-            "url": "https://www.pullandbear.com/tr/fermuarl%C4%B1-dik-yaka-basic-sweatshirt-l07560502?cS=807&pelement=692988876"
+            "url": ""
         },
         {
             "store": "mango",
@@ -46,7 +46,7 @@
         },
         {
             "store": "bershka",
-            "url": "https://www.bershka.com/tr/c0p189273755.html?colorId=712" 
+            "url": " " 
         }, 
         {
             "store": "bershka",
@@ -83,7 +83,7 @@
         },
         { 
             "store": "bershka", 
-            "url": "https://www.bershka.com/tr/c0p196930264.html?colorId=505"
+            "url": ""
         }, 
         
          {
@@ -113,6 +113,7 @@
     "sleep_min_seconds": 300,  
     "sleep_max_seconds": 500
 }
+
 
 
 
