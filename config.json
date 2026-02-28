@@ -66,29 +66,29 @@
         }, 
         {
             "store": "bershka",
-            "url": "" 
+            "url": "https://www.bershka.com/tr/c0p198810463.html?colorId=800" 
         }, 
         {
             "store": "bershka",
-            "url": "" 
+            "url": "https://www.bershka.com/tr/c0p198810463.html?colorId=700" 
         }, 
         {
             "store": "bershka",
-            "url": "" 
+            "url": "https://www.bershka.com/tr/c1010747956p191567200.html?colorId=800" 
         }, 
             
         {
             "store": "bershka",
-            "url": "" 
+            "url": "https://www.bershka.com/tr/c0p196946578.html?colorId=800" 
         },
         { 
             "store": "bershka", 
-            "url": ""
+            "url": "https://www.bershka.com/tr/c0p196946490.html?colorId=775"
         }, 
         
          {
             "store": "bershka",
-            "url": ""
+            "url": "https://www.bershka.com/tr/c1010747956p189276803.html?colorId=433"
         },
         
          {
@@ -113,6 +113,7 @@
     "sleep_min_seconds": 300,  
     "sleep_max_seconds": 500
 }
+
 
 
 
