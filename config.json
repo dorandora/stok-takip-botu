@@ -98,21 +98,22 @@
         
         {
             "store": "zara",
-            "url": "https://www.zara.com/tr/tr/dantel-detayli-liyosel-top-p03253805.html?v1=462337536&utm_campaign=productShare&utm_medium=mobile_sharing_iOS&utm_source=red_social_movil"
+            "url": ""
         }, 
         {
             "store": "zara",
-            "url": "https://www.zara.com/tr/tr/kisa-suni-deri-ceket-p04749701.html?v1=484784638&utm_campaign=productShare&utm_medium=mobile_sharing_iOS&utm_source=red_social_movil_movil#utm_referrer=https%3A%2F%2Fwww.zara.com%2Fshare%2Faskili-sirt-dekolteli-body-p03644812.html%3Fv1%3D467644325%26utm_campaign%3DproductShare%26utm_medium%3Dmobile_sharing_iOS%26utm_source%3Dred_social_movil"
+            "url": "" 
         }, 
         {
             "store": "zara",
-            "url": "https://www.zara.com/tr/tr/halter-yaka-top-p04424308.html?v1=452729584&utm_campaign=productShare&utm_medium=mobile_sharing_iOS&utm_source=red_social_movilutm_source=red_social_movil_movil#utm_referrer=https%3A%2F%2Fwww.zara.com%2Fshare%2Faskili-sirt-dekolteli-body-p03644812.html%3Fv1%3D467644325%26utm_campaign%3DproductShare%26utm_medium%3Dmobile_sharing_iOS%26utm_source%3Dred_social_movil"
+            "url": "" 
         }
     ],
     "sizes_to_check": ["40", "42", "M", "L", "XL" ],
     "sleep_min_seconds": 300,  
     "sleep_max_seconds": 500
 }
+
 
 
 
