@@ -62,7 +62,7 @@
         }, 
         {
             "store": "bershka",
-            "url": "" 
+            "url": "https://www.bershka.com/tr/c0p196946578.html?colorId=800" 
         }, 
         {
             "store": "bershka",
@@ -113,6 +113,7 @@
     "sleep_min_seconds": 300,  
     "sleep_max_seconds": 500
 }
+
 
 
 
